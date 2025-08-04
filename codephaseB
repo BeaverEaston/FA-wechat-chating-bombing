@@ -1,0 +1,28 @@
+#include<windows.h>
+#include<string>
+#include<iostream>
+
+main(void) {
+	Sleep(1200);
+	
+	while (1) {
+//        INPUT inputs[4] = {0};
+		// 按下Ctrl键
+		
+		Sleep(100);
+		
+		keybd_event(VK_CONTROL, 0, 0, 0);
+		keybd_event('V', 0, 0, 0);
+		
+		//keybd_event(58, 0, KEYEVENTF_KEYUP, 0);
+		
+		keybd_event('V', 0, KEYEVENTF_KEYUP, 0);
+		keybd_event(VK_CONTROL, 0, KEYEVENTF_KEYUP, 0);
+		keybd_event(VK_RETURN, 0, 0, 0);
+		keybd_event(VK_RETURN, 0, KEYEVENTF_KEYUP, 0);
+		
+//        Sleep(250);
+//        SendInput(4, inputs, sizeof(INPUT));
+	}
+	return 0;
+}
