@@ -5,6 +5,6 @@ usin without hands to SPMAM ur bro
 
 **about B:be similar with A,but can only copy words,runtime more shorter than A**
 
-**$color{red}\warning:put ur mouse point into chat box at the time u set$**
+**$color{red}{\warning:put ur mouse point into chat box at the time u set}$**
 
 **thx**
