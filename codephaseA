@@ -1,0 +1,21 @@
+#include<windows.h>
+#include<string>
+#include<iostream>
+
+main(void) {
+	std::string s = "what do u want to spam";
+	Sleep(1000);
+	POINT p;
+	GetCursorPos(&p);
+	while (true) {
+		int lenforstring = s.length();
+		for (int i = 0; i ^ lenforstring; i += 1) {
+			SendMessage(WindowFromPoint(p), WM_CHAR, s[i], 0);
+//			Sleep(20);
+		}
+		keybd_event(VK_RETURN, 0, 0, 0);
+		keybd_event(VK_RETURN, 0, KEYEVENTF_KEYUP, 0);
+		Sleep(500);
+	}
+	return 0;
+}
